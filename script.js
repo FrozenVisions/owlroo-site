@@ -18,14 +18,28 @@
     a.addEventListener('click',function(){sel.value=a.dataset.plan});
   });
 
-  // Audit form -> mailto (no account needed). TODO: replace with a form service.
+  // Audit form -> FormSubmit (free, no account), with a mailto fallback
   var f=document.getElementById('auditForm');
   f.addEventListener('submit',function(e){
     e.preventDefault();
     if(!f.reportValidity())return;
-    var d=new FormData(f),body=['Name: '+d.get('name'),'Business: '+d.get('business'),'Email: '+d.get('email'),'Phone: '+(d.get('phone')||'-'),'Type: '+d.get('type'),'Interested in: '+d.get('plan'),'','What is eating my time:',d.get('msg')||'-'].join('\n');
-    location.href='mailto:'+window.BRAND.email+'?subject='+encodeURIComponent('Free AI audit request: '+d.get('business'))+'&body='+encodeURIComponent(body);
-    document.getElementById('formOk').style.display='block';
+    var d=new FormData(f);
+    if(d.get('_honey'))return;
+    var btn=f.querySelector('button[type=submit]'),ok=document.getElementById('formOk');
+    var body=['Name: '+d.get('name'),'Business: '+d.get('business'),'Email: '+d.get('email'),'Phone: '+(d.get('phone')||'-'),'Type: '+d.get('type'),'Interested in: '+d.get('plan'),'','What is eating my time:',d.get('msg')||'-'].join('\n');
+    var subj='Free AI audit request: '+d.get('business');
+    function fallback(){
+      location.href='mailto:'+window.BRAND.email+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+      ok.textContent="Your email app should have opened with your details. Just press send. If it didn't, email "+window.BRAND.email+".";
+      ok.style.display='block';
+    }
+    btn.disabled=true;btn.textContent='Sending…';
+    fetch('https://formsubmit.co/ajax/'+window.BRAND.form,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({_subject:subj,_template:'table',_replyto:d.get('email'),name:d.get('name'),business:d.get('business'),email:d.get('email'),phone:d.get('phone')||'-',type:d.get('type'),plan:d.get('plan'),message:d.get('msg')||'-'})})
+    .then(function(r){return r.json()}).then(function(j){
+      if(j&&(j.success===true||j.success==='true')){ok.style.display='block';f.reset();btn.textContent='Sent ✓';}
+      else{btn.disabled=false;btn.textContent='Send me my free audit';fallback();}
+    }).catch(function(){btn.disabled=false;btn.textContent='Send me my free audit';fallback();});
   });
 
   // Mobile sticky CTA after hero
