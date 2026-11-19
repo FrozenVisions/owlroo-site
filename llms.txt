@@ -1,0 +1,47 @@
+# Owlroo
+
+> Owlroo builds and runs done-for-you AI assistants for UK small businesses. Tagline: Up all night, on the hop.
+
+An assistant answers customer enquiries, texts back missed calls, books appointments and asks happy customers for a Google review. Owlroo trains it on the business and looks after it. It is for UK small businesses, including trades, hair and beauty, clinics, fitness, hospitality, shops and professional services.
+
+Most businesses are live within 7 days of sending their details. There is no contract. Plans are month to month with 30 days' notice. Founding-client prices are for the first 10 businesses, and that monthly price stays locked while they remain a client. The setup fee has a 30-day money-back guarantee: email Owlroo and the setup fee is refunded in full. Owlroo says it is brand new and does not publish customer reviews. The review slots on the site are marked as examples.
+
+## What it can do
+
+- AI receptionist on website chat
+- WhatsApp and Instagram DM replies (Growth and Pro)
+- Missed-call text-back on every plan
+- Booking into Google Calendar, Outlook, Calendly and many booking tools, plus reminders (Growth and Pro)
+- Google review requests (Growth and Pro)
+- Lead and quote follow-up (Pro)
+- Full AI phone answering is an add-on, priced by call minutes and quoted in the free audit. It is not included in the monthly prices below.
+
+## Pricing
+
+Prices in GBP, as shown on the site. Monthly billing is the default. Yearly billing is two months free. The yearly pound amounts are calculated on the page when Yearly is selected.
+
+- Starter, £49 a month. Setup £297 (a standard setup of £497 is shown struck through). For sole traders who need to stop missing enquiries. Includes the website AI receptionist, missed-call text-back, leads sent to phone and email, training on services and prices, and a monthly check-up.
+- Growth, £97 a month. Setup £497 (a standard setup of £797 is shown struck through). For busy small businesses. Everything in Starter, plus WhatsApp and Instagram DM replies, calendar booking, appointment reminders, automatic Google review requests, and a monthly report and tweaks.
+- Done-for-you Pro, £197 a month. Setup £997 (a standard setup of £1,497 is shown struck through). For teams. Everything in Growth, plus lead and quote follow-up, links to CRM or job software, custom automation, priority same-day support, and up to 2 hours of changes each month.
+
+A comparison on the site puts a full-time receptionist at about £2,300 a month on the National Living Wage, including employer National Insurance and pension, and DIY chatbot tools at £20–£200 a month plus the owner's time. The site says those figures are a rough guide and costs may differ.
+
+## How it starts
+
+Free 20-minute AI audit, no obligation. Owlroo replies within one working day with a plain-English plan the business can keep even if it does not go ahead.
+
+## Contact
+
+- Email: hello@owlroo.com
+- Where: United Kingdom
+
+## Pages
+
+- [Home](https://owlroo.com/): what Owlroo is, the offer and the free audit
+- [What is Owlroo](https://owlroo.com/#what): one-paragraph definition
+- [What we build](https://owlroo.com/#build): the six assistants
+- [How it works](https://owlroo.com/#how): audit, build, bookings
+- [Compare](https://owlroo.com/#compare): Owlroo, a receptionist, and DIY tools
+- [Pricing](https://owlroo.com/#pricing): Starter, Growth and Pro
+- [FAQ](https://owlroo.com/#faq): buyer questions answered on the page
+- [Free AI audit](https://owlroo.com/#audit): request a 20-minute audit
