@@ -67,6 +67,8 @@ nav.main a{text-decoration:none;color:var(--ink-2)} nav.main a:hover{color:var(-
 .hero h1 em{font-style:normal;color:var(--brand)}
 .hero .sub{font-weight:700;font-size:1.06rem;margin-bottom:6px}
 .hero .lead{margin-bottom:24px}
+.what{font-size:1.02rem;color:var(--ink-2);margin:2px 0 16px}
+.what strong{color:var(--ink);font-weight:700}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
 .hero-ctas .btn{flex:1 1 220px}
 .guarantee-box{margin-top:22px;background:var(--sand);border-radius:var(--r-sm);padding:14px 18px;font-size:.88rem;max-width:460px}
@@ -229,6 +231,7 @@ form.audit-form{background:#fff;color:var(--ink);border-radius:var(--r);padding:
 .faq{border-top:1px solid var(--ink);margin-top:26px}
 .faq details{border-bottom:1px solid var(--ink)}
 .faq summary{list-style:none;cursor:pointer;padding:18px 34px 18px 4px;font-weight:700;position:relative;font-size:.98rem}
+.faq summary h3{display:inline;margin:0;font:inherit;letter-spacing:0;color:inherit}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:1.5rem;font-weight:400;transition:transform .2s}
 .faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
